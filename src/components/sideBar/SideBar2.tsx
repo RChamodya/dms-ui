@@ -17,8 +17,10 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import SettingsIcon from "@mui/icons-material/Settings";
 
 import SearchBar from "../InputFields/SearchBar";
+import { Navigate, useNavigate } from "react-router-dom";
 
 function SideBar2() {
+  const navigate = useNavigate();
   return (
     <>
       <nav className="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
@@ -112,9 +114,10 @@ function SideBar2() {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/documents"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                         role="menuitem"
+                        // onClick={()=>navigate("/account")}
                       >
                         Settings
                       </a>
@@ -145,7 +148,7 @@ function SideBar2() {
           <ul className="space-y-2 font-medium">
             <li>
               <a
-                href="#"
+                href="/"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 {/* <svg
@@ -206,7 +209,7 @@ function SideBar2() {
             </li>
             <li>
               <a
-                href="#"
+                href="/calendar"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 {/* <svg
@@ -230,7 +233,7 @@ function SideBar2() {
             </li>
             <li>
               <a
-                href="#"
+                href="notification"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 {/* <svg
@@ -315,7 +318,7 @@ function SideBar2() {
             </li>
             <li>
               <a
-                href="#"
+                href="/account"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 {/* <svg

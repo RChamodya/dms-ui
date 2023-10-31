@@ -1,6 +1,8 @@
+import SideBar2 from "../../components/sideBar/SideBar2";
+
 function CalenderPage(){
     return<>
-    <h1>Calender Page</h1>
+   <SideBar2/>
     </>
 }
 export default CalenderPage;

@@ -7,6 +7,7 @@ import Dashboard from "../views/dashboard/Dashboard";
 import DocumentPage from "../views/documentPage/DocumentPage";
 import CalenderPage from "../views/calenderPage/CalenderPage";
 import NotificationPage from "../views/notificationPage/NotificationPage";
+import AcountPage from "../views/acountPage/AcountPage";
 
 function Routing() {
   return (
@@ -17,6 +18,7 @@ function Routing() {
       <Route path="/documents" element={<DocumentPage />} />
       <Route path="/calendar" element={<CalenderPage />} />
       <Route path="/notification" element={<NotificationPage />} />
+      <Route path="/account" element={<AcountPage/>} />
     </Routes>
   );
 }

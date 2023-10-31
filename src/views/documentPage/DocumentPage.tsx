@@ -8,6 +8,7 @@ import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { NormalTable } from "../../components/tables/NormalTable";
 import { useState } from "react";
+import DeleteModal2 from "../../components/modals/DeleteModal2";
 
 function DocumentPage() {
   const handleViewButtonClick = () => {
@@ -59,7 +60,7 @@ function DocumentPage() {
 
       Action2: (
         <div className="cursor-pointer">
-          <DeleteIcon style={{}} />
+          <DeleteIcon data-hs-overlay="#hs-danger-alert" style={{}} />
         </div>
       ),
     },
@@ -133,6 +134,8 @@ function DocumentPage() {
 
   return (
     <>
+
+
       <SideBar2 />
       <div className="p-4 sm:ml-64">
         <div className="p-4 mt-10 dark:border-gray-700">
@@ -174,15 +177,18 @@ function DocumentPage() {
                 <DropZone />
               </div>
               <div className="mx-10 mt-10">
+                
                 <NormalTable
                   columnHeaders={columnHeaders}
                   tableData={tableData}
                 />
+              
               </div>
             </div>
           </div>
         </div>
       </div>
+      
       {/* <div className="grid grid-cols-12">
         <div className="col-span-12 bg-colo-blue">1</div>
       </div> */}
