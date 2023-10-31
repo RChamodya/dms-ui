@@ -1,5 +1,5 @@
-import { Tooltip } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Tooltip } from "flowbite-react";
 
 interface ActionButtonProps {
   tooltip: string;
@@ -9,7 +9,7 @@ interface ActionButtonProps {
 
 export const ActionButton = (props: ActionButtonProps) => {
   return (
-    <Tooltip title={props.tooltip}>
+    <Tooltip title={props.tooltip} content={undefined}>
       <FontAwesomeIcon
         icon={props.icon}
         onClick={props.handleClick}
